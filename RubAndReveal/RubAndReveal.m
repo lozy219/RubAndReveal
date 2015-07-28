@@ -1,6 +1,6 @@
 //
 //  RubAndReveal.m
-//  RubAndRevealDemo
+//  RubAndReveal
 //
 //  Created by Mingyu on 27/7/15.
 //  Copyright (c) 2015 Echx. All rights reserved.
@@ -55,6 +55,7 @@
     [self.backImageView.layer addSublayer:backImageLayer];
     
     CAShapeLayer *eraseLayer = [[CAShapeLayer alloc] init];
+    eraseLayer.fillColor = nil;
     eraseLayer.strokeColor = [[UIColor blackColor] CGColor];
     eraseLayer.frame = imageFrame;
     eraseLayer.lineCap = self.lineCap;
