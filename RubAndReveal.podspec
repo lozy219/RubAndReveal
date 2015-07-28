@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "RubAndReveal"
-  s.version      = "0.0.1"
+  s.version      = "0.0.2"
   s.summary      = "RubAndReveal help you create a view, and rub it to get the underneath view."
 
   s.description  = <<-DESC
@@ -35,7 +35,7 @@ Pod::Spec.new do |s|
   # ―――  Spec License  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
   #  Licensing your code is important. See http://choosealicense.com for more info.
-  #  CocoaPods will detect a license file if there is a named LICENSE*
+  #  CocoaPods will detect a license file if there is a named LICENS2*
   #  Popular ones are 'MIT', 'BSD' and 'Apache License, Version 2.0'.
   #
 
@@ -79,7 +79,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/lozy219/RubAndReveal.git", :tag => "v0.0.1" }
+  s.source       = { :git => "https://github.com/lozy219/RubAndReveal.git", :tag => "v0.0.2" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
