@@ -14,7 +14,7 @@
 		930899CD1B662E800062C6AB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 930899CC1B662E800062C6AB /* Images.xcassets */; };
 		930899D01B662E800062C6AB /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 930899CE1B662E800062C6AB /* LaunchScreen.xib */; };
 		930899DC1B662E800062C6AB /* RubAndRevealDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 930899DB1B662E800062C6AB /* RubAndRevealDemoTests.m */; };
-		930899EB1B664DA30062C6AB /* RubAndReveal.m in Sources */ = {isa = PBXBuildFile; fileRef = 930899E91B664DA30062C6AB /* RubAndReveal.m */; };
+		93AC02161B6730D600F3BF4E /* RubAndReveal.m in Sources */ = {isa = PBXBuildFile; fileRef = 93AC02141B6730D600F3BF4E /* RubAndReveal.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,8 +41,8 @@
 		930899D51B662E800062C6AB /* RubAndRevealDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RubAndRevealDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		930899DA1B662E800062C6AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		930899DB1B662E800062C6AB /* RubAndRevealDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RubAndRevealDemoTests.m; sourceTree = "<group>"; };
-		930899E91B664DA30062C6AB /* RubAndReveal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RubAndReveal.m; path = RubAndReveal/RubAndReveal.m; sourceTree = "<group>"; };
-		930899EA1B664DA30062C6AB /* RubAndReveal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RubAndReveal.h; path = RubAndReveal/RubAndReveal.h; sourceTree = "<group>"; };
+		93AC02141B6730D600F3BF4E /* RubAndReveal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RubAndReveal.m; path = ../../RubAndReveal/RubAndReveal.m; sourceTree = "<group>"; };
+		93AC02151B6730D600F3BF4E /* RubAndReveal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RubAndReveal.h; path = ../../RubAndReveal/RubAndReveal.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,8 +126,8 @@
 		930899E51B662E9A0062C6AB /* RubAndReveal */ = {
 			isa = PBXGroup;
 			children = (
-				930899E91B664DA30062C6AB /* RubAndReveal.m */,
-				930899EA1B664DA30062C6AB /* RubAndReveal.h */,
+				93AC02141B6730D600F3BF4E /* RubAndReveal.m */,
+				93AC02151B6730D600F3BF4E /* RubAndReveal.h */,
 			);
 			name = RubAndReveal;
 			path = RubAndRevealDemo;
@@ -233,7 +233,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				930899EB1B664DA30062C6AB /* RubAndReveal.m in Sources */,
+				93AC02161B6730D600F3BF4E /* RubAndReveal.m in Sources */,
 				930899C81B662E800062C6AB /* ViewController.m in Sources */,
 				930899C51B662E800062C6AB /* AppDelegate.m in Sources */,
 				930899C21B662E800062C6AB /* main.m in Sources */,
