@@ -24,40 +24,54 @@
 
 @implementation RubAndReveal
 
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect {
-    // Drawing code
+- (instancetype)init {
+    self = [super init];
+    
+    if (self) {
+        self.lineCap = kCALineCapRound;
+        self.lineJoin = kCALineJoinBevel;
+        self.lineWidth = 40;
+    }
+    
+    return self;
 }
-*/
 
 - (void)configureLayoutWithBackImage:(UIImage *)backImage frontImage:(UIImage *)frontImage {
     CGRect imageFrame = CGRectMake(0, 0, self.frame.size.width, self.frame.size.height);
-    self.backImageLayer = [[CALayer alloc] init];
-    self.backImageLayer.frame = imageFrame;
     self.backImageView = [[UIImageView alloc] initWithFrame:imageFrame];
     self.frontImageView = [[UIImageView alloc] initWithFrame:imageFrame];
     self.backImage = backImage;
-    self.backImageLayer.contents = (__bridge id)(self.backImage.CGImage);
     self.frontImage = frontImage;
-    self.frontImageView.image = self.frontImage;
+
+    CALayer *backImageLayer = [[CALayer alloc] init];
+    backImageLayer.frame = imageFrame;
+    backImageLayer.contents = (__bridge id)(self.backImage.CGImage);
+    self.backImageLayer = backImageLayer;
+    
+    self.frontImageView.image = frontImage;
+    
     [self addSubview:self.frontImageView];
     [self addSubview:self.backImageView];
-    [self.backImageView.layer addSublayer:self.backImageLayer];
+    [self.backImageView.layer addSublayer:backImageLayer];
     
-    self.eraseLayer = [[CAShapeLayer alloc] init];
-    self.eraseLayer.fillColor = nil;
-    self.eraseLayer.strokeColor = [[UIColor blackColor] CGColor];
-    self.eraseLayer.frame = self.frontImageView.frame;
-    self.eraseLayer.lineCap = kCALineCapRound;
-    self.eraseLayer.lineJoin = kCALineJoinBevel;
-    self.eraseLayer.lineWidth = 40;
+    CAShapeLayer *eraseLayer = [[CAShapeLayer alloc] init];
+    eraseLayer.strokeColor = [[UIColor blackColor] CGColor];
+    eraseLayer.frame = imageFrame;
+    eraseLayer.lineCap = self.lineCap;
+    eraseLayer.lineJoin = self.lineJoin;
+    eraseLayer.lineWidth = self.lineWidth;
+    
+    self.eraseLayer = eraseLayer;
     
     [self.layer addSublayer:self.eraseLayer];
     self.backImageLayer.mask = self.eraseLayer;
     
     self.eraseStroke = CGPathCreateMutable();
+}
+
+- (void)resetImage {
+    self.eraseStroke = CGPathCreateMutable();
+    self.eraseLayer.path = CGPathCreateMutable();
 }
 
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {

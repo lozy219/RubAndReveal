@@ -10,6 +10,11 @@
 
 @interface RubAndReveal : UIView
 
+@property (nonatomic, strong) NSString *lineCap;
+@property (nonatomic, strong) NSString *lineJoin;
+@property (nonatomic, assign) CGFloat lineWidth;
+
 - (void)configureLayoutWithBackImage:(UIImage *)backImage frontImage:(UIImage *)frontImage;
+- (void)resetImage;
 
 @end

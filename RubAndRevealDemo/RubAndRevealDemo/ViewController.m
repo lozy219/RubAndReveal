@@ -21,9 +21,11 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
+    // Create a rub and reveal view
     self.demoView = [[RubAndReveal alloc] init];
     RubAndReveal *demoView = self.demoView;
     
+    // Configure the layout
     [demoView setTranslatesAutoresizingMaskIntoConstraints:NO];
     [self.view addSubview:demoView];
     
@@ -58,8 +60,17 @@
     
     [self.view layoutSubviews];
     
+    // Configure the properties of the view
+    self.demoView.lineWidth = 35;
+    
+    // And call this method to set up the images
     [self.demoView configureLayoutWithBackImage:[UIImage imageNamed:@"xi"]
-                                frontImage:[UIImage imageNamed:@"jiang"]];
+                                     frontImage:[UIImage imageNamed:@"jiang"]];
+}
+
+- (IBAction)reset:(id)sender {
+    // Reset the image
+    [self.demoView resetImage];
 }
 
 - (void)didReceiveMemoryWarning {

@@ -66,6 +66,7 @@
 		930899B31B662E800062C6AB = {
 			isa = PBXGroup;
 			children = (
+				930899E51B662E9A0062C6AB /* RubAndReveal */,
 				930899BE1B662E800062C6AB /* RubAndRevealDemo */,
 				930899D81B662E800062C6AB /* RubAndRevealDemoTests */,
 				930899BD1B662E800062C6AB /* Products */,
@@ -84,7 +85,6 @@
 		930899BE1B662E800062C6AB /* RubAndRevealDemo */ = {
 			isa = PBXGroup;
 			children = (
-				930899E51B662E9A0062C6AB /* RubAndReveal */,
 				930899C31B662E800062C6AB /* AppDelegate.h */,
 				930899C41B662E800062C6AB /* AppDelegate.m */,
 				930899C61B662E800062C6AB /* ViewController.h */,
@@ -130,6 +130,7 @@
 				930899EA1B664DA30062C6AB /* RubAndReveal.h */,
 			);
 			name = RubAndReveal;
+			path = RubAndRevealDemo;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -432,6 +433,7 @@
 				930899E11B662E800062C6AB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		930899E21B662E800062C6AB /* Build configuration list for PBXNativeTarget "RubAndRevealDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -440,6 +442,7 @@
 				930899E41B662E800062C6AB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
