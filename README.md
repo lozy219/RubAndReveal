@@ -8,7 +8,7 @@ RubAndReveal is a iOS library for you to create the effect of rubbing/wiping a f
 
 ### Using CocoaPods
 
-    pod 'RubAndReveal', '~> 0.0.2'
+    pod 'RubAndReveal', '~> 0.0.3'
     
     
 ### Usage
