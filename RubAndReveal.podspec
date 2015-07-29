@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "RubAndReveal"
-  s.version      = "0.1.0"
+  s.version      = "0.1.1"
   s.summary      = "RubAndReveal help you create a view, and rub it to get the underneath view."
 
   s.description  = <<-DESC
@@ -79,7 +79,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/lozy219/RubAndReveal.git", :tag => "v0.1.0" }
+  s.source       = { :git => "https://github.com/lozy219/RubAndReveal.git", :tag => "v0.1.1" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
