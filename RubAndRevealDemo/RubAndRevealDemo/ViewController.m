@@ -9,7 +9,7 @@
 #import "ViewController.h"
 #import "RubAndReveal.h"
 
-@interface ViewController ()
+@interface ViewController ()<RubAndRevealDelegate>
 
 @property (nonatomic, strong) RubAndReveal *demoView;
 
@@ -24,6 +24,9 @@
     // Create a rub and reveal view
     self.demoView = [[RubAndReveal alloc] init];
     RubAndReveal *demoView = self.demoView;
+    
+    // Link the delegate
+    demoView.delegate = self;
     
     // Configure the layout
     [demoView setTranslatesAutoresizingMaskIntoConstraints:NO];
@@ -76,6 +79,14 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)rubbingStart {
+    NSLog(@"start to rub");
+}
+
+- (void)rubbingEnd {
+    NSLog(@"rubbing ends");
 }
 
 @end
