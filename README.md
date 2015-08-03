@@ -48,7 +48,7 @@ RubAndReveal is a iOS library for you to create the effect of rubbing/wiping a f
     let demoView = RubAndReveal()
   ```
   
-  - configure the fram of the view
+  - configure the frame of the view
   
   - set the image
   
