@@ -2,8 +2,6 @@
 
 RubAndReveal is a iOS library for you to create the effect of rubbing/wiping a front layer of image to reveal the back image.
 
-![demo](Demo/demo.gif)
-
 ## Installation
 
 ### Using CocoaPods
